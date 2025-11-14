@@ -24,7 +24,7 @@ print(var.index("j"))
 for i in range(len(var)): #print(var[len(var)-1]) lze nahradit print(var[-1])
     print(var[i])
 
-for i in range(len(var)): #for i in range(len(var)) lze nahradit for i in var
+for i in range(len(var)): #for i in range(len(var)) by slo nahradit for i in var
     print(var[-i-1])
 
 for i in range(len(var)):
@@ -38,3 +38,19 @@ for i in range(len(var)-2):
 
 for i in range(int(len(var)/2)+1):
     print(var[i],var[-i-1])
+
+for i in range(10):
+    print(i)
+    if i > 5:
+        break
+    print("ahoj")
+
+
+while True:
+    x = input("napis cislo: ")
+    try:
+        a = int(x)
+        break
+    except:
+        pass
+print(a)
