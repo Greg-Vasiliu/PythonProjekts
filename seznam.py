@@ -54,9 +54,55 @@
 #     souc = souc+i
 
 # print(prum)
-pole = [5, 2, 9, 1, 7, 3, 1, 6, 4]
-nove_pole =[]
+# pole = [5, 2, 9, 1, 7, 3, 1, 6, 4]
+# nove_pole =[]
 
-for i in range(len(pole)-1, -1, -1): #len = 9, zacneme (9-1); chceme pos0, => interval edge = -1; krok -1
-    nove_pole.append(pole[i])
-print(nove_pole)
+# for i in range(len(pole)-1, -1, -1): #len = 9, zacneme (9-1); chceme pos0, => interval edge = -1; krok -1
+#     nove_pole.append(pole[i])
+# print(nove_pole)
+
+###################################################
+
+pole1 = [5, 2, 9, 1, 7, 3, 10, 6, 4]
+pole2 = [3, 5, 4, 7, 5, 3, 4, 5, 10]
+pole_vysledek = []
+
+# for i in range(len(pole1)):
+#     pole_vysledek.append(pole1[i]+pole2[i])
+# print(pole_vysledek)
+
+# for i in range(len(pole1)):
+#     pole_vysledek.append(pole1[i]+pole2[-i-1])
+# print(pole_vysledek)
+
+# max = 0
+# scnd = 0
+
+# for i in pole1:
+#     if i > max:
+#         scnd = max #Pozor na postup nastaveni hodnot!
+#         max = i
+#     if i < max and i > scnd:
+#         scnd = i
+# print(max)
+# print(scnd)
+#print(float('-inf') # jen float rozeznava string jako hodnotu, navic infinity
+
+pole3 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# je = True
+# for i in range(len(pole1)-1):
+#     if pole1[i] > pole1[i+1]:
+#         je = False
+#         break
+# if je:
+#     print("je")
+# else:
+#     print("neni")
+
+sud = 0
+lich = 0
+for i in pole3:
+    if i % 2 == 0:
+       sud += 1
+    else: lich += 1
+print(sud, lich)
